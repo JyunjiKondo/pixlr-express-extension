@@ -1,0 +1,27 @@
+{
+  "name": "Pixlr Express launcher",
+  "version": "2",
+  "manifest_version": 2,
+  "description": "launch Pixlr Express app via web intents",
+  "icons": {
+    "128": "icon_128.png",
+    "48": "icon_48.png",
+    "16": "icon_16.png"
+  },
+  "intents": {
+    "http://webintents.org/edit" : {
+      "type": ["image/jpg", "image/jpeg", "image/png"],
+      "title": "Pixlr Express launcher",
+      "path": "edit.html",
+      "disposition": "window"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "http://pixlr-express-extension/*",
+    "http://imm.io/*",
+    "http://*.pixlr.com/*"
+  ]
+}
